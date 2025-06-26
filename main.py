@@ -11,6 +11,8 @@ data_workers=[]
 data_clients =[]
 area_markers = []
 
+
+
 class Areas:
     def __init__(self, area_name, area_location):
         self.area_name = area_name
