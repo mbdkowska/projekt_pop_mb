@@ -11,6 +11,8 @@ data_workers=[]
 data_clients =[]
 area_markers = []
 
+
+
 class Areas:
     def __init__(self, area_name, area_location):
         self.area_name = area_name
@@ -405,7 +407,5 @@ map_widget = tkintermapview.TkinterMapView(ramka_mapa, width=1200, height=500, c
 map_widget.grid(row=0, column=0, columnspan=2)
 map_widget.set_position(52.23,21.0)
 map_widget.set_zoom(6)
-
-
 
 root.mainloop()
