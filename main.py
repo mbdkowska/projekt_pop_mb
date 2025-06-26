@@ -29,7 +29,7 @@ class Areas:
             return [0.0, 0.0]
 
 
-class client:
+class Client:
     def __init__(self, client_name, client_surname, client_id):
         self.client_name = client_name
         self.client_surname = client_surname
@@ -69,7 +69,7 @@ def dodaj_wszystko():
     text_clientnical = entry_name_client.get().strip()
     text_client_surname = entry_surname_client.get().strip()
 
-    ar = areas(text_areas, text_location)
+    ar = Areas(text_areas, text_location)
     areas.append(ar)
 
     coordinates = ar.get_coordinates()
@@ -95,7 +95,7 @@ def dodaj_wszystko():
     entry_name_workers.delete(0, END)
     entry_surname_workers.delete(0, END)
 
-    client_obj = client(text_clientnical, text_client_surname, "-")
+    client_obj = Client(text_clientnical, text_client_surname, "-")
     clients.append(client_obj)
     pozycja = listbox_lista_klientow.size() + 1
     wiersz = f"{pozycja}. {text_clientnical} {text_client_surname}"
