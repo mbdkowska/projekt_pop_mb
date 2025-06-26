@@ -28,8 +28,22 @@ class Areas:
         except Exception as e:
             print(f"Błąd podczas pobierania współrzędnych: {e}")
             return [0.0, 0.0]
+
 class Client:
     def __init__(self, client_name, client_surname, client_id):
         self.client_name = client_name
         self.client_surname = client_surname
         self.client_id = client_id
+
+class Workers:
+    def __init__(self, worker_name, worker_surname, worker_id):
+        self.worker_name = worker_name
+        self.worker_surname = worker_surname
+        self.worker_id = worker_id
+
+root = Tk()
+root.geometry("1200x760")
+root.title("Ramka")
+
+
+
